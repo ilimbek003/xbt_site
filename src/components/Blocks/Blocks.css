@@ -1,0 +1,126 @@
+.blocks_comp {
+  width: 100%;
+  margin: 350px 0 0 0;
+}
+.blocks_comp .course {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(252, 252, 252, 1);
+  margin: 0 0 20px 0;
+}
+.blocks_comp .width {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 100%;
+}
+
+.blocks_comp .home_block {
+  width: 100%;
+}
+
+.blocks_comp .block {
+  max-width: 250px;
+}
+
+.blocks_comp .box_block_block {
+  margin: 0 auto;
+  width: 90%;
+  min-height: 120px;
+  border-radius: 25px;
+  position: relative;
+  padding: 26px 12px;
+  background: rgba(26, 27, 35, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box_block_block .absolune {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blocks_comp .margen {
+  display: flex;
+  align-items: center;
+}
+
+.blocks_comp .box_block_block p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.blocks_comp p {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.blocks_comp h1 {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0;
+  gap: 2px;
+  margin: 8px 0 10px 0;
+}
+
+.blocks_comp .dollar {
+  color: rgba(137, 140, 169, 1);
+}
+
+.blocks_comp .logo_img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  margin: 0 0 8px 0;
+}
+.blocks_comp .down {
+  color: rgba(141, 107, 226, 1);
+  font-size: 38px;
+  font-weight: 800;
+}
+.blocks_comp .row_up {
+  color: rgba(0, 239, 142, 1);
+  font-size: 38px;
+  font-weight: 800;
+}
+.line_chart_one {
+  position: absolute;
+  /* margin: 40px 0 0 0; */
+}
+
+@media (max-width: 800px) {
+  .blocks_comp .width {
+    max-width: 800px;
+    width: 100%;
+  }
+}
+@media (max-width: 429px) {
+  .blocks_comp {
+    margin: 0;
+  }
+  .blocks_comp .course {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 391px) {
+  .blocks_comp {
+    margin: 0;
+  }
+  .blocks_comp .course {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}

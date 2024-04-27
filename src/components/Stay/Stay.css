@@ -1,0 +1,229 @@
+#stay .container {
+  width: 1140px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.scroll {
+  display: flex;
+  width: 70%;
+  overflow-x: auto;
+}
+#stay .scroll::-webkit-scrollbar-track {
+  background: rgba(137, 140, 169, 1) !important;
+  border-radius: 10px !important;
+  background-color: #f5f5f5 !important;
+}
+
+#stay .scroll::-webkit-scrollbar {
+  width: 12px !important;
+  height: 7px !important;
+  background: rgba(26, 27, 35, 1) !important;
+}
+
+#stay .scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+  background: rgba(137, 140, 169, 1) !important;
+}
+.btn-see {
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  border-radius: 10px;
+  padding: 12px 30px;
+  background-color: #8d6ae2 !important;
+}
+.skey_h1 {
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  margin: 100px 0 40px 0;
+}
+#stay .width {
+  width: 350px;
+}
+.news-all {
+  padding: 50px 0 50px 30px;
+  border: 1px solid #8d6ae2;
+  display: flex;
+  border-radius: 25px;
+  gap: 20px;
+  align-items: center;
+  margin: 100px 0 0 0;
+}
+.news-all h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+}
+.news-all button {
+  border: none;
+  margin-top: 15px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  border-radius: 10px;
+  padding: 12px 30px;
+  background-color: #8d6ae2 !important;
+}
+.news-all p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(137, 140, 169, 1);
+  margin-top: 15px !important;
+  line-height: 1.5;
+}
+#stay .date {
+  font-size: 12px;
+  font-weight: 400;
+}
+#stay .skey_block {
+  width: 260px;
+  margin: 0 auto;
+  min-height: 255px;
+  border-radius: 20px;
+  background: var(--unnamed, #171822);
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.context_box-item {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.skey_block h4 {
+  font-size: 14px;
+  font-weight: 400;
+}
+#stay .news-photo {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+#stay .news-photo img {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+}
+.skey_block h4 {
+  margin-top: 12px;
+  color: #fff;
+  font-style: normal;
+  overflow: hidden;
+  height: 57px;
+}
+#stay .not_data {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#stay .not_data {
+  font-size: 25px;
+  font-weight: 600;
+}
+#stay .slick-prev:before,
+#stay .slick-next:before {
+  display: none;
+}
+.slick-dots li:nth-child(1) button:before {
+  width: 60px;
+  height: 3px;
+  border-radius: 5px;
+  background: #fff;
+  margin-left: -90px;
+  font-size: 0;
+}
+.slick-dots li:nth-child(2) button:before {
+  width: 60px;
+  height: 3px;
+  border-radius: 5px;
+  background: #fff;
+  margin-left: -35px;
+  font-size: 0;
+}
+.slick-dots li:nth-child(3) button:before {
+  width: 60px;
+  height: 3px;
+  border-radius: 5px;
+  background: #fff;
+  margin-left: 20px;
+  font-size: 0;
+}
+.skey_btn_block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: -20px 30px 0 0;
+  position: relative;
+}
+.skey_btn {
+  border-radius: 4px;
+  padding: 15px 50px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+}
+.skey_btn:hover {
+  opacity: 0.8;
+}
+@media (max-width: 768px) {
+  .news_foto {
+    width: 100% !important;
+    text-align: center;
+    padding: 0 20px 0px 0;
+  }
+  .scroll {
+    width: 100%;
+  }
+  .news-all {
+    padding: 50px 0 50px 30px;
+    border: 1px solid #8d6ae2;
+    display: flex;
+    border-radius: 25px;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 429px) {
+  .skey_btn_block {
+    position: relative;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    margin-left: 100px;
+  }
+  .news-all h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .news_foto {
+    text-align: left;
+  }
+}

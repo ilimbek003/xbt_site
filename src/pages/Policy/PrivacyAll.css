@@ -1,0 +1,28 @@
+.privacy-wrap {
+  padding: 180px 0 60px 0;
+}
+.privacy .title {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 20px 0 5px 0;
+}
+.privacy .block_top {
+  padding: 180px 0 10px 0;
+}
+.privacy .block_title_top {
+  padding: 0 0 10px 0;
+}
+.privacy .project {
+  color: var(--unnamed, #9e9ea5);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.privacy .pro {
+  margin: 10px 0 0 0;
+}
+.privacy .span {
+  color: #fff;
+}

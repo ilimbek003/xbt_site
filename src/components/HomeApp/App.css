@@ -1,0 +1,237 @@
+.app-main {
+    padding-top: 80px;
+}
+
+.app-wrap {
+    min-height: 380px;
+    padding: 60px 60px 60px 400px;
+    background-color: rgba(255, 255, 255, .03);
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.app-wrap::before {
+    content: '';
+    width: 280px;
+    height: 400px;
+    position: absolute;
+    bottom: -70px;
+    left: 70px;
+    background-image: url('../../img/phone-xbt.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.app-wrap h1 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.app-wrap p {
+    color: rgba(255, 255, 255, .6);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.app-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-qr-wrap {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.app-qr-wrap .tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.app-qr-wrap .tabs span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.app-qr-wrap .tabs span:hover {
+    cursor: pointer;
+}
+
+.app-qr-wrap .tabs span.active {
+    opacity: 1;
+}
+
+.app-qr-wrap .tabs span::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.app-qr-wrap .tabs span.ios::before {
+    background-image: url('../../img/apple-svgrepo-com.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.app-qr-wrap .tabs span.android::before {
+    background-image: url('../../img/android-svgrepo-com.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.app-qr-wrap img {
+    max-width: 150px;
+}
+
+.app-links {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.app-links a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    padding: 15px 15px;
+    background-color: #EAECEF;
+    border-radius: 5px;
+    position: relative;
+    -webkit-transition: .3s all ease-in-out 0s;
+    -o-transition: .3s all ease-in-out 0s;
+    transition: .3s all ease-in-out 0s
+}
+
+.app-links a:hover {
+    background-color: #B7BDC6;
+    -webkit-transition: .3s all ease-in-out 0s;
+    -o-transition: .3s all ease-in-out 0s;
+    transition: .3s all ease-in-out 0s
+}
+
+.app-links a::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.app-links a.android::before {
+    background-image: url('../../img/google-play-svgrepo-com.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.app-links a.ios::before {
+    background-image: url('../../img/apple-173-svgrepo-com.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.app-links a div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.app-links a span {
+    color: #181A20;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.app-links a b {
+    color: #181A20;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.qr-code-icon {
+    margin-left: auto;
+    width: 24px;
+    height: 24px;
+    background-image: url('../../img/qr-svgrepo-com.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.qr-code-soon {
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 6px 8px;
+    background-color: #FCD535;
+    border-radius: 15px;
+    margin-left: auto;
+}
+
+.qr-code-wrap {
+    position: absolute;
+    top: 0;
+    right: -165px;
+    bottom: 0;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s all ease-in-out 0s;
+    -o-transition: .3s all ease-in-out 0s;
+    transition: .3s all ease-in-out 0s
+}
+
+.app-links a:hover .qr-code-wrap {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: .3s all ease-in-out 0s;
+    -o-transition: .3s all ease-in-out 0s;
+    transition: .3s all ease-in-out 0s
+}
+
+.qr-code-wrap:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    left: -20px;
+    border: solid 10px transparent;
+    border-right-color: #FFF;
+    z-index: 1;
+}
+
+.qr-code-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+}

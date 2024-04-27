@@ -1,0 +1,261 @@
+.header {
+  /* position: fixed; */
+  width: 100%;
+  margin-top: 25px;
+  z-index: 99;
+}
+
+.header .container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  /* background: rgba(23, 24, 34, 0.2); */
+  /* backdrop-filter: blur(10px); */
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.header a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btn_link{
+  background: transparent !important;
+  color: rgba(115, 244, 173, 1) !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  float: left !important;
+}
+.header .pages a {
+  color: rgba(252, 252, 252, 1);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  position: relative;
+  transition: 0.2s ease;
+  padding: 8px 0;
+}
+
+.header .pages a:hover::before {
+  transform: scaleX(1);
+  transform-origin: center;
+  transition: transform 0.3s;
+}
+
+.header .pages a::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(115, 244, 173, 1);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s;
+}
+
+.header .color {
+  display: flex;
+  align-items: center;
+}
+
+.header .color:hover {
+  opacity: 0.8;
+}
+
+.header .pages {
+  margin-left: 5.8%;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .battons {
+  margin-left: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .battons_one {
+  margin-left: 4%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .login {
+  border: 1px solid rgba(141, 106, 226, 1);
+  width: 122px;
+  height: 44px;
+  display: flex !important  ;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 30px 0 0;
+}
+.header .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  width: 122px;
+  height: 44px;
+  line-height: 1;
+  border-radius: 10px;
+  padding: 12px 30px;
+  background: rgba(141, 106, 226, 1) !important;
+}
+
+.header .btn:hover {
+  opacity: 0.8;
+}
+
+.header .btn .dashboard {
+  width: 80%;
+}
+
+.header #toggle,
+.header .hamburger,
+.header .nav,
+.header .nav_wrapper {
+  display: none;
+}
+
+.header .hamburger {
+  width: 24px;
+  height: 24px;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.header .hamburger div {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+  margin-top: 6px;
+}
+
+.header .hamburger div:first-child {
+  margin: 0;
+}
+
+.header #toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 10px;
+}
+
+.header #toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+
+.header #toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -4px;
+}
+
+.header .nav {
+  margin-top: -110px;
+  width: 100%;
+  height: 120vh;
+  background: #171822;
+  transition: all 0.3s ease-in-out;
+  padding-top: 140px;
+  z-index: 1;
+  box-shadow: 5px 10px 15px #000;
+}
+
+.header .nav_wrapper {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  animation: fixed_modal_menu 0.7s ease;
+}
+
+.logo-header {
+  height: 40px;
+}
+
+@keyframes fixed_modal_menu {
+  0% {
+    opacity: 0;
+    right: -200px;
+  }
+
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+.header .nav_wrapper .login {
+  margin: 10px;
+}
+
+.header .nav_wrapper .btn {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.header .nav_wrapper .page {
+  margin: 10px;
+  transition: 0.3s ease;
+}
+
+.header .login,
+.header .page {
+  color: rgba(252, 252, 252, 1);
+}
+
+.header .login.active,
+.header .page.active {
+  color: rgba(115, 244, 173, 1);
+}
+
+@media (max-width: 900px) {
+  .header .nav_wrapper .page:hover {
+    color: #fff;
+  }
+
+  .header {
+    margin-top: 15px;
+  }
+
+  .header .battons {
+    display: none;
+  }
+
+  .header .pages {
+    display: none;
+  }
+
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header .hamburger,
+  .header .nav {
+    display: block;
+  }
+
+  .header .nav_wrapper .btn {
+    margin-top: 10px;
+  }
+}

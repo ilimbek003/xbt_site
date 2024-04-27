@@ -1,0 +1,168 @@
+.withdraw {
+  width: 100%;
+  min-height: 500px;
+}
+
+.withdraw .holder {
+  border-bottom: 1px solid rgba(79, 75, 92, 1);
+}
+
+.withdraw .holder h1 {
+  color: rgba(252, 252, 252, 1);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 30px 0 26px 0;
+}
+.withdraw .nav {
+  color: rgba(252, 252, 252, 1);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px 0;
+  cursor: pointer;
+  outline: none;
+  margin: 0 30px 0 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.withdraw .search_i {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  margin: 14px;
+}
+
+.withdraw .holder input {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 189%;
+  position: relative;
+  width: 300px;
+  height: 44px;
+  border-radius: 3px;
+  background: rgba(38, 42, 50, 0.6);
+  outline: none;
+  border: none;
+  padding: 0 0 0 48px;
+  color: white;
+}
+
+.withdraw .wrapper {
+  margin-top: 30px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  gap: 25px;
+}
+
+.withdraw .nav.active {
+  background-color: transparent;
+  border-bottom: 2px solid rgb(115, 244, 173);
+}
+
+.withdraw .wrapper.active {
+  display: grid;
+}
+
+.withdraw .wrapper.hide {
+  display: none;
+}
+.withdraw .wrapper .box {
+  min-height: 90px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(26, 27, 35, 1);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.withdraw .wrapper .bonus {
+  min-height: 90px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(137, 140, 169, 1);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.withdraw .box_bonus {
+  min-height: 90px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(90deg, #fff58b 0%, #ebebeb 0.01%, #a4ffda 100%);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.withdraw .wrapper .box:hover {
+  background: #4d535e;
+}
+
+.withdraw .wrapper img {
+  width: 62px;
+  height: 62px;
+}
+
+.withdraw .wrapper h1 {
+  color: rgba(252, 252, 252, 1);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.withdraw .el_currency {
+  color: rgba(26, 27, 35, 1) !important;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.withdraw .wrapper p {
+  color: rgba(137, 140, 169, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+}
+.withdraw .el_name {
+  color: rgba(26, 27, 35, 1) !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1;
+  text-align: center !important;
+}
+
+.withdraw .loading_div {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .withdraw .holder h1 {
+    margin-bottom: 20px;
+  }
+
+  .withdraw .holder input {
+    width: 100%;
+  }
+
+  .withdraw .width {
+    width: 100%;
+  }
+}

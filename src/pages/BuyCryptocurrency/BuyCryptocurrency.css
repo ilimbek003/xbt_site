@@ -1,0 +1,164 @@
+#buy_cryptocurrency .container {
+  max-width: 1140px;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+#buy_cryptocurrency .holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 0 50px 0;
+}
+
+#buy_cryptocurrency .holder h1 {
+  color: #ffffff;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#buy_cryptocurrency .search_i {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  margin: 14px;
+}
+#SvgjsLine8002 {
+  display: none;
+}
+#buy_cryptocurrency .holder input {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 189%;
+  position: relative;
+  width: 300px;
+  height: 44px;
+  border-radius: 3px;
+  background: rgba(38, 42, 50, 0.6);
+  outline: none;
+  border: none;
+  padding: 0 0 0 48px;
+  color: white;
+}
+
+#buy_cryptocurrency .buy_cryp {
+  width: 100%;
+  height: 74px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 0 20px 0;
+  padding: 4px 4px 4px 8px;
+}
+
+#buy_cryptocurrency .мarket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0 20px 0;
+}
+.with_bys {
+  margin: 0 auto;
+}
+
+.мarket_h3 {
+  color: #9e9ea5 !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+}
+.мarket_h2{
+   color: #9e9ea5 ;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+}
+
+#buy_cryptocurrency .buy_cryp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 190px;
+}
+
+#buy_cryptocurrency .buy_cryp .big {
+  display: flex;
+  align-items: center;
+}
+
+#buy_cryptocurrency .buy_cryp .big img {
+  margin-right: 10px;
+  width: 45px;
+  height: 45px;
+}
+#buy_cryptocurrency .buy_cryp h3 {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+}
+
+#buy_cryptocurrency .buy_cryp .big h6 {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+#buy_cryptocurrency .buy_cryp button {
+  margin-left: auto;
+  width: 132px;
+  height: 41px;
+  border: none;
+  border-radius: 3px;
+  background: var(--green);
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  cursor: pointer;
+}
+
+#buy_cryptocurrency .loading_div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0000008e;
+}
+
+@media (max-width: 1000px) {
+  #buy_cryptocurrency .buy_cryp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  #buy_cryptocurrency .none_stroke,
+  #buy_cryptocurrency .line_chart,
+  #buy_cryptocurrency .num {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #buy_cryptocurrency .holder h1 {
+    margin-bottom: 20px;
+  }
+  #buy_cryptocurrency .holder input {
+    width: 100%;
+  }
+  #buy_cryptocurrency .width {
+    width: 100%;
+  }
+}

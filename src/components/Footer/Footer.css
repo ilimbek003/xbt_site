@@ -1,0 +1,138 @@
+#footer {
+  width: 100%;
+  min-height: 220px;
+  background: #07080b;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 90%;
+}
+#footer .logo {
+  display: flex;
+  align-items: center;
+}
+#footer .logo h1 {
+  color: var(--green);
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.footer_flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 35px 0 0 0;
+}
+.footer_flex_block h5 {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 20px 0 0 0;
+}
+.footer_flex_block h4 {
+  padding: 0;
+}
+.footer_flex_block h4 a {
+  color: rgba(115, 244, 173, 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+.footer_new_all .page_home,
+.footer_new_all h6 {
+  color: rgba(137, 140, 169, 1);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+  text-decoration: none;
+}
+.footer_new_all .page,
+.footer_new_all h4 {
+  color: rgba(252, 252, 252, 1);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  text-decoration: none;
+}
+.footer_new_all_blocks h6 {
+  color: #9e9ea5;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+}
+.footer_new_all_blocks h4 {
+  margin-bottom: 10px;
+}
+.footer_new_all_blocks h4 a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  text-decoration: none;
+}
+#footer .foot {
+  margin-top: 20px;
+  padding: 15px 0;
+  border-top: 1px solid rgba(79, 75, 92, 1);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer .foot p {
+  color: rgba(137, 140, 169, 1);
+  font-size: 14px;
+  font-weight: 400;
+}
+#footer .foot p a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+#footer .icons img {
+  margin-left: 32px;
+}
+
+@media (max-width: 800px) {
+  .footer__all {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .footer_new_all_blocks {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .footer__all {
+    margin-top: 30px;
+  }
+  .footer_new_all_blocks {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .footer_new_all {
+    width: 100%;
+    margin-top: 40px;
+  }
+  #footer .icons img {
+    margin-left: 20px;
+  }
+  .footer_new_all_blocks h6,
+  .footer_new_all h6 {
+    margin-bottom: 10px;
+  }
+  #footer .foot {
+    gap: 10px;
+    flex-direction: column;
+  }
+  #footer .foot p {
+    font-size: 12px;
+  }
+}

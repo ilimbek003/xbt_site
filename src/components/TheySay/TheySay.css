@@ -1,0 +1,81 @@
+.they_say {
+  width: 100%;
+}
+.they_say .container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 90%;
+}
+.they_say .they_say_h1 {
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  margin: 150px 0 30px 0;
+}
+.they_say .slide_review {
+  background: #00000000;
+}
+.they_say .they_say_block {
+  margin: 0 auto;
+  width: 95%;
+  min-height: 0;
+  border-radius: 4px;
+  background: var(--unnamed, #171822);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 21px 46px 0 rgba(0, 0, 0, 0.1),
+    0 83px 83px 0 rgba(0, 0, 0, 0.09), 0 187px 112px 0 rgba(0, 0, 0, 0.05),
+    0 333px 133px 0 rgba(0, 0, 0, 0.01), 0 520px 146px 0 rgba(0, 0, 0, 0);
+  padding: 20px 30px 30px 30px;
+}
+.they_say .they_say_block p {
+  margin-top: 16px;
+  height: 56px;
+  color: rgba(255, 255, 255, .7);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.they_say .they_say_block_avatar {
+  display: flex;
+  align-items: center;
+}
+.they_say .they_say_block_avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+.they_say .they_say_block_avatar h3 {
+  color: var(--white, #fff);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0 0 0 15px;
+  white-space: nowrap;
+}
+.they_say .slick-track {
+  background: #00000000;
+}
+.they_say .they_say_btn {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 35px;
+  border-radius: 4px;
+  background: var(--green);
+  padding: 15px 35px;
+  border: none;
+  color: var(--white, #fff);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.they_say .they_say_btn:hover {
+  opacity: 0.8;
+}

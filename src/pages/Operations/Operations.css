@@ -1,0 +1,246 @@
+.operations {
+  width: 100%;
+  min-height: 600px;
+}
+.operations .container {
+  margin: 0 auto;
+  max-width: 1140px;
+  width: 90%;
+  padding-bottom: 100px;
+}
+.operations h1 {
+  color: rgba(252, 252, 252, 1);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 30px 0 25px 0;
+}
+.operations .wrapper {
+  width: 100%;
+  border: 1px solid rgba(72, 61, 109, 1);
+  border-radius: 25px;
+  background: rgba(26, 27, 35, 1);
+}
+.operations .wrapper .save_oper,
+.operations .wrapper .box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 20px;
+}
+.operations .wrapper .save_oper {
+  border-top: 1px solid rgba(137, 140, 169, 1);
+}
+
+.operations .wrapper .save_oper img {
+  width: 40px;
+  height: 40px;
+  margin: 0 0 0 15px;
+}
+.operations .wrapper .box p {
+  color: rgba(252, 252, 252, 1);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 0 20px;
+}
+.operations .wrapper .save_oper p {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 0;
+}
+.operations .text-error {
+}
+
+.operations .wrapper .save_oper .name p {
+  font-size: 14px;
+  font-weight: 600;
+}
+.operations .wrapper .save_oper .btn {
+  margin-left: auto;
+  min-width: 150px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  background: transparent;
+}
+.operations .modal_home {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #00000081;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.operations .modal {
+  position: absolute;
+  max-width: 430px;
+  width: 80%;
+  min-height: 300px;
+  border-radius: 20px;
+  background: #262a32;
+  padding: 20px;
+  overflow-x: hidden;
+}
+.operations .modal h1 {
+  text-align: center;
+}
+.operations .modal .type {
+  margin-top: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.operations .modal .type_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background: #1d2026;
+  margin-bottom: 5px;
+}
+.operations .modal p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 5px 0;
+}
+.operations .modal .type p {
+  font-size: 15px;
+}
+.operations .modal h2 {
+  color: var(--unnamed, #4ac49e);
+  font-size: 16px;
+  font-weight: 600;
+}
+.operations .modal .type_box p {
+  margin: 0;
+}
+.operations .modal .type_box h3 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.operations .modal .input_box {
+  position: relative;
+  margin-bottom: 15px;
+}
+.operations .modal .input_box input {
+  width: 100%;
+  padding: 12px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #1d2026;
+  font-size: 15px;
+  color: #fff;
+}
+.operations .input_box .icon {
+  top: 8px;
+  right: 8px;
+  position: absolute;
+  color: var(--green);
+  cursor: pointer;
+}
+.operations .modal .close {
+  margin: 0 auto;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 12px 35px;
+  border-radius: 5px;
+  background: #4ac49e;
+  color: var(--white, #fff);
+  font-size: 16px;
+  font-weight: 500;
+}
+.operations .not {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.operations .modal .close:hover {
+  opacity: 0.8;
+}
+.operations .name p {
+  display: flex;
+  text-align: start;
+  padding-left: 60px;
+}
+.operations .loading_div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.operations .not_data {
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.operations .not_data .not_data_icon {
+  color: var(--green);
+  margin-bottom: 20px;
+}
+.operations .not_data .not_data_h1 {
+  text-align: center;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+}
+.operations .wrapper .save_oper.cross {
+  display: none;
+}
+
+.opt-time {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .operations h1 {
+    margin-bottom: 20px;
+  }
+  .operations .wrapper .save_oper {
+    display: none;
+  }
+  .operations .wrapper .save_oper.cross {
+    display: flex;
+  }
+  .operations .wrapper .save_oper p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .operations .wrapper .save_oper .summ {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: auto;
+  }
+  .operations .wrapper .box {
+    display: none;
+  }
+}

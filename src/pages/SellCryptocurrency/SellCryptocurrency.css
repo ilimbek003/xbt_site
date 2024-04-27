@@ -1,0 +1,186 @@
+#sell_cryptocurrency {
+  width: 100%;
+  min-height: 900px;
+}
+#sell_cryptocurrency .holder {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px 0;
+}
+.line_chart {
+  position: absolute;
+}
+
+#sell_cryptocurrency .holder h1 {
+  color: rgba(252, 252, 252, 1);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#sell_cryptocurrency .search_i {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  top: 19px;
+  z-index: 1;
+}
+#sell_cryptocurrency .width {
+  position: relative;
+}
+
+#sell_cryptocurrency .holder input {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 189%;
+  position: relative;
+  width: 70%;
+  height: 40px;
+  background: transparent;
+  border-bottom: 1px solid rgba(45, 46, 60, 1);
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  outline: none;
+  padding: 0 0 0 48px;
+  color: white;
+  margin: 14px 0 20px 0;
+}
+
+#sell_cryptocurrency .buy_cryp {
+  width: 100%;
+  height: 74px;
+  border-top: 1px solid rgba(137, 140, 169, 1);
+  padding: 10px;
+}
+
+#sell_cryptocurrency .buy_cryp.first {
+  width: 100%;
+  height: 74px;
+  border-top: none;
+  padding: 10px;
+}
+#sell_cryptocurrency .мarket {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0 20px 0;
+}
+
+#sell_cryptocurrency .мarket h3 {
+  color: rgba(252, 252, 252, 1);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  margin: 0 27px 0 19px;
+}
+#sell_cryptocurrency .мarket h6 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  margin: 0 27px 0 19px;
+  color: rgba(137, 140, 169, 1);
+}
+.sell_border {
+  border: 1px solid rgba(72, 61, 109, 1);
+  border-radius: 25px;
+  width: 70%;
+}
+#sell_cryptocurrency .buy_cryp {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#sell_cryptocurrency .buy_cryp .big {
+  display: flex;
+  align-items: center;
+}
+#buy_cryptocurrency .num {
+  margin-left: 28px;
+}
+#sell_cryptocurrency .buy_cryp .big img {
+  margin-right: 10px;
+  width: 45px;
+  height: 45px;
+}
+#sell_cryptocurrency .buy_cryp h3 {
+  color: rgba(252, 252, 252, 1);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+#sell_cryptocurrency .buy_cryp .num {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  padding-left: 30px;
+}
+
+#sell_cryptocurrency .buy_cryp .big h6 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  color: rgba(137, 140, 169, 1);
+}
+
+#sell_cryptocurrency .buy_cryp button {
+  margin-left: auto;
+  width: 122px;
+  height: 44px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(141, 106, 226, 1);
+  color: rgba(252, 252, 252, 1);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  cursor: pointer;
+}
+
+#sell_cryptocurrency .loading_div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0000008e;
+}
+
+@media (max-width: 1000px) {
+  #sell_cryptocurrency .buy_cryp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  #sell_cryptocurrency .none_stroke,
+  #sell_cryptocurrency .line_chart,
+  #sell_cryptocurrency .num {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #sell_cryptocurrency .holder h1 {
+    margin-bottom: 20px;
+  }
+  #sell_cryptocurrency .holder input {
+    width: 100%;
+  }
+  #sell_cryptocurrency .width {
+    width: 100%;
+  }
+}

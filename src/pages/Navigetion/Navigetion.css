@@ -1,0 +1,96 @@
+.navigetion .login__flex {
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.navigetion h1 {
+  color: var(--white, #fff);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.navigetion p {
+  color: var(--white, #cdcdcd);
+  font-size: 16px;
+  font-weight: 300;
+  margin: 12px 0;
+}
+
+.navigetion .wrapper {
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.navigetion .bg_login {
+  width: 100%;
+}
+
+.navigetion label {
+  margin-top: 30px;
+  color: var(--white, #fff);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  line-height: 140%;
+}
+
+.navigetion input {
+  width: 100%;
+  outline: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--unnamed, #9e9ea5);
+  background: var(--unnamed, #171822);
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.navigetion input::placeholder {
+  color: var(--unnamed, #9e9ea5);
+}
+
+.navigetion input:hover {
+  border: 1px solid #fff;
+}
+
+.navigetion .forgot_your_password {
+  color: #4ac49e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  text-decoration: none;
+  margin: 20px 0 30px 0;
+}
+
+.wrapper_navigetion button {
+  margin-top: 20px;
+}
+
+.wrapper_navigetion button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 800px) {
+  .navigetion .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .navigetion .wrapper .bg_login {
+    display: none;
+  }
+}

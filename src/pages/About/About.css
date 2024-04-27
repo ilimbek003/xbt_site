@@ -1,0 +1,26 @@
+.About .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px auto  !important;
+}
+.About .tel {
+  width: 352px;
+  height: 100%;
+}
+.About .pro {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(137, 140, 169, 1);
+}
+.About .projwct_text {
+  color: rgba(252, 252, 252, 1);
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+.About .projwct_ios {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(115, 244, 173, 1);
+}
