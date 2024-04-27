@@ -63,150 +63,144 @@ const Popular = ({ color, data, datas }) => {
                 </th>
               </tr>
             </thead>
-            <div className="table_none_one">
-              {data.map((el, i, key) => (
-                <tbody key={i}>
-                  <tr>
-                    <td>
-                      <div
-                        className="flex_tabels"
-                        style={{
-                          display: "flex",
-                        }}
-                      >
-                        <img src={el.logo} alt="" />
-                        <p className="title" style={{ margin: "0 0 0 5px" }}>
-                          {el.name}
-                        </p>
-                      </div>
-                    </td>
-                    <td>
-                      <p>{el.rate}</p>
-                    </td>
-                    <td>
-                      <p
-                        style={{
-                          color: el.difference.includes("-")
-                            ? "red"
-                            : "#30E0A1",
-                        }}
-                      >
-                        {el.difference}
+            {data.map((el, i, key) => (
+              <tbody key={i} className="table_block_one">
+                <tr>
+                  <td>
+                    <div
+                      className="flex_tabels"
+                      style={{
+                        display: "flex",
+                      }}
+                    >
+                      <img src={el.logo} alt="" />
+                      <p className="title" style={{ margin: "0 0 0 5px" }}>
+                        {el.name}
                       </p>
-                    </td>
-                    <td>
-                      {el.difference.includes("-") ? (
-                        <MdKeyboardArrowDown className="down" />
-                      ) : (
-                        <MdKeyboardArrowUp className="row_up" />
-                      )}
-                    </td>
-                    <td>
-                      <div
-                        style={{
-                          display: "flex",
-                        }}
+                    </div>
+                  </td>
+                  <td>
+                    <p>{el.rate}</p>
+                  </td>
+                  <td>
+                    <p
+                      style={{
+                        color: el.difference.includes("-") ? "red" : "#30E0A1",
+                      }}
+                    >
+                      {el.difference}
+                    </p>
+                  </td>
+                  <td>
+                    {el.difference.includes("-") ? (
+                      <MdKeyboardArrowDown className="down" />
+                    ) : (
+                      <MdKeyboardArrowUp className="row_up" />
+                    )}
+                  </td>
+                  <td>
+                    <div
+                      style={{
+                        display: "flex",
+                      }}
+                    >
+                      <button
+                        onClick={() =>
+                          navigate(
+                            `/dashboard/buy-cryptocurrency/${el.currency}`
+                          )
+                        }
+                        className="trade"
                       >
-                        <button
-                          onClick={() =>
-                            navigate(
-                              `/dashboard/buy-cryptocurrency/${el.currency}`
-                            )
-                          }
-                          className="trade"
-                        >
-                          Покупка
-                        </button>
-                        <button
-                          onClick={() =>
-                            navigate(
-                              `/dashboard/buy-cryptocurrency/${el.currency}`
-                            )
-                          }
-                          className="tradee"
-                        >
-                          Торговля
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              ))}
-            </div>
-            <div className="table_block_two">
-              {data.map((el, i, key) => (
-                <tbody key={i}>
-                  <tr>
-                    <td>
-                      <div
-                        className="flex_tabels"
-                        style={{
-                          display: "flex",
-                        }}
+                        Покупка
+                      </button>
+                      <button
+                        onClick={() =>
+                          navigate(
+                            `/dashboard/buy-cryptocurrency/${el.currency}`
+                          )
+                        }
+                        className="tradee"
                       >
-                        <img src={el.logo} alt="" />
-                        <p className="title" style={{ margin: "0 0 0 5px" }}>
-                          {el.name}
+                        Торговля
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            ))}
+            {data.map((el, i, key) => (
+              <tbody key={i} className="table_block_two">
+                <tr>
+                  <td>
+                    <div
+                      className="flex_tabels"
+                      style={{
+                        display: "flex",
+                      }}
+                    >
+                      <img src={el.logo} alt="" />
+                      <p className="title" style={{ margin: "0 0 0 5px" }}>
+                        {el.name}
+                      </p>
+                    </div>
+                  </td>
+                  <td>
+                    <div>
+                      <p>{el.rate}</p>
+                      <div className="difference">
+                        <p
+                          style={{
+                            color: el.difference.includes("-")
+                              ? "red"
+                              : "#30E0A1",
+                          }}
+                        >
+                          {el.difference}
+                        </p>
+                        <p>
+                          {" "}
+                          {el.difference.includes("-") ? (
+                            <MdKeyboardArrowDown className="down" />
+                          ) : (
+                            <MdKeyboardArrowUp className="row_up" />
+                          )}
                         </p>
                       </div>
-                    </td>
-                    <td>
-                      <div>
-                        <p>{el.rate}</p>
-                        <div className="difference">
-                          <p
-                            style={{
-                              color: el.difference.includes("-")
-                                ? "red"
-                                : "#30E0A1",
-                            }}
-                          >
-                            {el.difference}
-                          </p>
-                          <p>
-                            {" "}
-                            {el.difference.includes("-") ? (
-                              <MdKeyboardArrowDown className="down" />
-                            ) : (
-                              <MdKeyboardArrowUp className="row_up" />
-                            )}
-                          </p>
-                        </div>
-                      </div>
-                    </td>
-                    <td>
-                      <div
-                        style={{
-                          display: "flex",
-                        }}
-                        className="table_block_two_btn"
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      style={{
+                        display: "flex",
+                      }}
+                      className="table_block_two_btn"
+                    >
+                      <button
+                        onClick={() =>
+                          navigate(
+                            `/dashboard/buy-cryptocurrency/${el.currency}`
+                          )
+                        }
+                        className="trade"
                       >
-                        <button
-                          onClick={() =>
-                            navigate(
-                              `/dashboard/buy-cryptocurrency/${el.currency}`
-                            )
-                          }
-                          className="trade"
-                        >
-                          Покупка
-                        </button>
-                        <button
-                          onClick={() =>
-                            navigate(
-                              `/dashboard/buy-cryptocurrency/${el.currency}`
-                            )
-                          }
-                          className="tradee"
-                        >
-                          Торговля
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              ))}
-            </div>
+                        Покупка
+                      </button>
+                      <button
+                        onClick={() =>
+                          navigate(
+                            `/dashboard/buy-cryptocurrency/${el.currency}`
+                          )
+                        }
+                        className="tradee"
+                      >
+                        Торговля
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            ))}
           </table>
         </div>
       </div>
