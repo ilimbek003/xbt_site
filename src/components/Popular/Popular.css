@@ -283,6 +283,8 @@ tbody tr:nth-child(even) {
     justify-content: center;
   }
   .popular .row_up {
+
+    
     margin: 5px 0 0 0;
     font-size: 32px;
   }
